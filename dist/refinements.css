@@ -1,0 +1,25 @@
+:root{--ink:#193c2b;--green:#285f39;--olive:#63852b;--muted:#566259;--line:#d7e2d4}
+/* Keep maps and partner brands in their original colors. */
+.map-box iframe,.plan-logos{filter:none}
+.plan-logos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:26px 0;border:0;align-items:stretch}
+.plan-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;min-height:134px;padding:22px 16px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 4px 16px #193c2b06}
+.plan-card img{display:block;width:100%;max-width:155px;height:58px;object-fit:contain;filter:none;opacity:1}
+.plan-card span{font-size:11px;font-weight:500;color:var(--muted);text-align:center}
+.contact-block dl{display:grid;grid-template-columns:max-content max-content;column-gap:24px;row-gap:8px;width:max-content;max-width:100%;min-width:0;line-height:1.6}
+.contact-block dl>div{display:contents}
+.contact-block dt,.contact-block dd{margin:0;font-size:14px}
+.contact-block dd{font-weight:550;color:var(--ink);text-align:left;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wa-icon{fill:currentColor;stroke:none;stroke-width:0;display:block;flex:0 0 auto}
+.whatsapp-float{width:62px;height:62px;background:#128c4b;border:2px solid #fff;box-shadow:0 7px 24px #128c4b38;color:#fff}
+.whatsapp-float .wa-icon{width:31px;height:31px}
+.whatsapp-float:hover{background:#08763c}
+.mobile-booking>.button{background:#128c4b;gap:12px;min-height:56px;padding:14px 18px;font-weight:650;font-size:14px;box-shadow:0 3px 10px #128c4b20}
+.mobile-booking>.button>.wa-icon:first-child{width:25px;height:25px;margin:0;flex:0 0 25px}
+.mobile-booking>.button>svg:last-child{width:20px;height:20px;flex:0 0 20px;margin-left:auto}
+.mobile-booking>.button:hover{background:#08763c}
+.slide-copy h1 em,.slide-copy h2 em,h2 em{color:#63852b}
+.slide-description,.quick-action small,.home-reassurance,.services-note,.fine,.campaign-heading>p,.footer-main>div a,.footer-main p{color:var(--muted)}
+.quick-icon{color:#507623;background:#edf4df}
+.eyebrow{color:#326042}
+@media(min-width:768px){.plan-logos{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.plan-card{min-height:146px;padding:22px 16px}.plan-card img{max-width:160px;height:64px}.contact-block dl{column-gap:28px}}
+@media(max-width:374px){.contact-block dl{column-gap:18px}.contact-block dt,.contact-block dd{font-size:13px}.mobile-booking{gap:8px}.mobile-booking>.button{padding:14px 12px;font-size:12px;gap:9px}.mobile-booking>.button>.wa-icon:first-child{width:23px;height:23px;flex-basis:23px}}
